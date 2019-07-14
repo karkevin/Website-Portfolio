@@ -201,6 +201,11 @@ header .empty {
           animation-duration: 1200ms;
 }
 
+#hello a {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
 .welcome {
   -ms-flex-pack: distribute;
       justify-content: space-around;

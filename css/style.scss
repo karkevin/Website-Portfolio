@@ -167,6 +167,9 @@ header {
     max-width: 32em;
     animation-duration: 1200ms;
   }
+  a {
+    animation-delay: 400ms;
+  }
 }
 
 .welcome {

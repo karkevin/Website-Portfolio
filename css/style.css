@@ -322,12 +322,25 @@ header .empty {
       grid-template-columns: [col1] 35% [col2] 65%;
 }
 
+#key-points .content {
+  padding: 1.25em 0;
+}
+
 #key-points .questions p {
   text-align: right;
 }
 
 #key-points .answers p {
   text-align: left;
+}
+
+#key-points a {
+  text-decoration: none;
+  color: blue;
+}
+
+#key-points a:hover {
+  color: #5200FF;
 }
 
 #resume {
@@ -437,8 +450,12 @@ footer .links {
 }
 
 footer a {
+  color: #6e6e6e;
   text-decoration: none;
-  color: black;
+}
+
+footer a:hover {
+  color: #252525;
 }
 
 @media screen and (min-width: 700px) {

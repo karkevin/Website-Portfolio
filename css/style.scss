@@ -255,11 +255,21 @@ header {
 }
 #key-points {
   grid-template-columns: [col1] 35% [col2] 65%;
+  .content {
+    padding: 1.25em 0;
+  }
   .questions p {
     text-align: right;
   }
   .answers p {
     text-align: left;
+  }
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  a:hover {
+    color: #5200FF;
   }
 }
 
@@ -348,8 +358,11 @@ footer {
     justify-content: space-around;
   }
   a {
+    color: rgb(110, 110, 110);
     text-decoration: none;
-    color: black;
+  }
+  a:hover {
+    color: rgb(37, 37, 37);
   }
 }
 

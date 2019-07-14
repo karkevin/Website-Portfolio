@@ -24,9 +24,11 @@ $header-colour: rgb(243, 243, 243);
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
+.page-wrapper {
+  overflow-x: hidden;
+}
 .width {
   width: 100%;
 }
@@ -146,13 +148,13 @@ header {
 
 // Hello Image
 #hello {
-  padding-top: 100px;
+  padding-top: 4em;
   position: relative;
   background-color: #c8f2ff;
   height: 92vh;
   #sun {
     position: absolute;
-    margin: 1em;
+    margin: 0.8em;
     right: 0;
     width: 65vw;
     max-width: 19em;
@@ -163,7 +165,7 @@ header {
     bottom: 0;
     left: -10em;
     width: 80vw;
-    min-width: 490px;
+    min-width: 440px;
     max-width: 32em;
     animation-duration: 1200ms;
   }

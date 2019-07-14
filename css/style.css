@@ -8,6 +8,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+}
+
+.page-wrapper {
   overflow-x: hidden;
 }
 
@@ -174,7 +177,7 @@ header .empty {
 }
 
 #hello {
-  padding-top: 100px;
+  padding-top: 4em;
   position: relative;
   background-color: #c8f2ff;
   height: 92vh;
@@ -182,7 +185,7 @@ header .empty {
 
 #hello #sun {
   position: absolute;
-  margin: 1em;
+  margin: 0.8em;
   right: 0;
   width: 65vw;
   max-width: 19em;
@@ -195,7 +198,7 @@ header .empty {
   bottom: 0;
   left: -10em;
   width: 80vw;
-  min-width: 490px;
+  min-width: 440px;
   max-width: 32em;
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;

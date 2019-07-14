@@ -225,7 +225,7 @@ header .empty {
 
 .welcome #hello-text {
   font-size: 2.5em;
-  font-family: "Mono", sans-serif;
+  font-family: "Oxygen Mono", monospace;
   width: 60vw;
   min-width: 320px;
   text-align: center;
@@ -340,7 +340,7 @@ header .empty {
 }
 
 #key-points a:hover {
-  color: #5200FF;
+  color: #5200ff;
 }
 
 #resume {
@@ -356,14 +356,21 @@ header .empty {
   padding: 2% 5% 5% 5%;
 }
 
+.paper .content {
+  text-align: left;
+  padding: 0;
+  font-size: 1em;
+  margin-bottom: 1.8em;
+}
+
 .paper p {
-  letter-spacing: 0.05em;
   line-height: 1.8em;
 }
 
 .paper ul li {
-  font-size: 0.9375em;
-  line-height: 2em;
+  list-style: circle outside;
+  margin-bottom: 0.3em;
+  margin-left: 1.2em;
 }
 
 .resume-top {
@@ -373,7 +380,7 @@ header .empty {
 .topic {
   text-align: left;
   font-size: 1.2em;
-  margin-bottom: 1.2em;
+  margin-bottom: 0.8em;
 }
 
 .title {
@@ -384,15 +391,19 @@ header .empty {
 .time-frame {
   font-size: 0.875em;
   font-weight: 300;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.gpa {
+  margin-bottom: 1em;
 }
 
 .courses {
-  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 .subject {
-  margin-bottom: 3em;
+  margin-bottom: 3.5em;
 }
 
 #projects {
@@ -536,6 +547,9 @@ footer a:hover {
   .questions,
   .answers {
     padding: 1em;
+  }
+  .paper ul li {
+    margin-left: 1.1em;
   }
 }
 

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kevin Xu Computer Science Profolio">
@@ -11,13 +12,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kevin Xu</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:400&display=swap" rel="stylesheet">
+    <!-- Links -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Oxygen+Mono|Raleway&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="shortcut icon" href="resources/images/mylogo.png">
     <link rel="icon" href="resources/images/mylogo.png">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Scripts -->
     <script
         type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143814227-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143814227-1');
+    </script>
+
 </head>
 
 <body>
@@ -76,10 +90,9 @@
                     <div class="top about-top">
                         <p>About Me</p>
                     </div>
-                    <p class="content">Hello! My name is Kevin Xu and I am a student at the University of Toronto. I am
-                        passionate about
-                        development, and always expanding my knowledge in the field. As I am currently looking for
-                        intern positions for the summer of 2020, if you happen to have any availabilites feel free to
+                    <p class="content">Hello! My name is Kevin Xu and I am a student at the University of Toronto.
+                        Having a passion for development and design, I am always expanding my knowledge in the field
+                        through school and side projects. I love trying new things and meeting people, so feel free to
                         contact me using the links above! </p>
                 </div>
                 <div class="container blurb box" id="key-points">
@@ -91,16 +104,18 @@
                         <p>Full Name</p>
                         <p>Location</p>
                         <p>Grad</p>
-                        <p>Email</p>
                         <p>Résumé</p>
+                        <p>Email</p>
                     </div>
                     <div class="answers content">
                         <p>Ming Yang (Kevin) Xu</p>
                         <p>Toronto, ON</p>
                         <p>April 2022</p>
-                        <p>karkevin14@gmail .com</p>
                         <a href="resources/kevinXu.pdf" target="_blank">
                             <p>kevinXu.pdf</p>
+                        </a>
+                        <a href="mailto:karkevin14@gmail.com" target="_blank">
+                            <p>karkevin14@gmail .com</p>
                         </a>
                     </div>
 
@@ -140,7 +155,7 @@
                         <p>Guitar</p>
                         <p>Basketball</p>
                         <p>Badminton</p>
-                        <p>Bubble Tea</p>
+                        <p>Photography</p>
                     </div>
 
                 </div>
@@ -155,24 +170,44 @@
                     <p class="topic">EDUCATION</p>
                     <p class="title">University of Toronto - Honours BS Computer Science and Economics</p>
                     <p class="time-frame">SEPT 2018 - APRIL 2022</p>
-                    <p>Cumulative GPA: 4.00/4.00
-                    </p><br>
-                    <p class="courses">Relevant Courses:</p>
-                    <ul style="list-style:circle inside;">
-                        <li>Introduction to Computer Science (Python)</li>
-                        <li>Software Design (Java)</li>
-                        <li>Mathematical Expression and Reasoning for CS</li>
-                    </ul>
+                    <p class="gpa">Cumulative GPA: 4.00/4.00
+                    </p>
+                    <div class="content">
+                        <p class="courses">Relevant Courses:</p>
+                        <ul>
+                            <li>Introduction to Computer Science (Python)</li>
+                            <li>Mathematical Expression and Reasoning for CS</li>
+                            <li>Software Design (Java)</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="subject">
                     <p class="topic">EXPERIENCE</p>
                     <p class="title">Networks Lab Assistant - University of Alberta</p>
-                    <p class="time-frame">MAY 2019 - AUGUST 2019</p><br>
-                    <p>Developed a program to create JSON graphs from the localization of Bluetooth LE beacons. Worked
-                        with
-                        the Ubertooth library in C, socket programming using ZeroMQ, and the StreamGraph library in Java
-                        to
-                        accomplish this task.</p>
+                    <p class="time-frame">MAY 2019 - AUGUST 2019</p>
+                    <p class="content">Developed a program to create JSON graphs from the localization of Bluetooth LE
+                        beacons. Worked
+                        with the Ubertooth library in C, socket programming using ZeroMQ, and the StreamGraph library in
+                        Java to accomplish this task.</p>
+                </div>
+                <div class="subject">
+                    <p class="topic">ACTIVITES</p>
+
+                    <p class="title">Coding Commitee Member - UofT CS Community</p>
+                    <p class="time-frame">JANUARY 2019 - PRESENT</p>
+                    <ul class="content">
+                        <li>Organized monthly HackNights for CS students at UofT.</li>
+                        <li>Planned and advertised these events for students to learn and improve programming skills.
+                        </li>
+                    </ul>
+
+                    <p class="title">Cashier and Chef - Tokyo Express</p>
+                    <p class="time-frame">AUGUST 2015 - AUGUST 2019</p>
+                    <ul class="content">
+                        <li>Continuously greeted and took orders in a fast-paced environment.</li>
+                        <li>Able to handle multiple tasks and fulfill orders in a prompt manner.</li>
+                    </ul>
+
                 </div>
             </div>
         </section>
@@ -188,8 +223,9 @@
                 </div>
                 <div class="project">
                     <p class="title top">Automation Kumon</p>
-                    <p class="content">Used Electron to develop a front-end for a desktop app. Linked this to a python
-                        backend using ZeroMQ sockets.</p>
+                    <p class="content">Used Electron to develop the front-end for a desktop app. Linked this interface
+                        to a Python
+                        back-end using ZeroMQ sockets.</p>
                 </div>
                 <!-- <div class="project">
                     <p class="title top">Annoying Alarm</p>
@@ -205,7 +241,7 @@
                     <p class="title top">ATM Machine</p>
                     <p class="content">Built a custon ATM in Java with a focus on software design and principles. Used
                         Java
-                        libraries to implement an interactive UI,</p>
+                        libraries to implement an interactive UI.</p>
                 </div>
                 <div class="project">
                     <p class="title top">Elevator Simulator</p>

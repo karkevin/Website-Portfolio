@@ -227,7 +227,7 @@ header .empty {
   font-size: 2.5em;
   font-family: "Oxygen Mono", monospace;
   width: 60vw;
-  min-width: 320px;
+  min-width: 340px;
   text-align: center;
 }
 
@@ -238,17 +238,23 @@ header .empty {
 }
 
 .toggle-cursor {
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite ease;
+          animation: blink 1s infinite ease;
 }
 
 @-webkit-keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
   50% {
     opacity: 1;
   }
 }
 
 @keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
   50% {
     opacity: 1;
   }

@@ -186,7 +186,7 @@ header {
     font-size: 2.5em;
     font-family: "Oxygen Mono", monospace;
     width: 60vw;
-    min-width: 320px;
+    min-width: 340px;
     text-align: center;
   }
   .icons {
@@ -197,9 +197,12 @@ header {
 }
 
 .toggle-cursor {
-  animation: blink 1s infinite;
+  animation: blink 1s infinite ease;
 }
 @keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
   50% {
     opacity: 1;
   }

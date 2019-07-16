@@ -20,23 +20,36 @@ const slideNavigation = function () {
 
 };
 
-function typeWriter(text, id) {
+function typeWriter(text, id, callback) {
     var i = 0;
     var speed = 95;
     var helloText = document.querySelector(id);
 
-    function typing() {
+    function typing(callback) {
         if (i < text.length) {
             helloText.innerHTML = helloText.innerHTML.slice(0, i) + text.charAt(i) + helloText.innerHTML.slice(i);
             // helloText.textContent += text.charAt(i);
             i++;
-            setTimeout(typing, speed);
+            setTimeout(typing, speed, callback);
         }
+        else {
+            callback();
+        }
+        
     }
-    typing();
+    typing(callback);
 
 }
-typeWriter("Hello World! I'm Kevin Xu.", "#hello-text");
+typeWriter("Hello World! I'm Kevin Xu.", "#hello-text", blink);
+
+function blink() {
+    helloText = document.querySelector("#hello-text");
+    helloText.innerHTML = helloText.innerHTML.slice(0, -1);
+    var span = document.createElement("span");
+    span.textContent = "|";
+    span.classList = "toggle-cursor";
+    helloText.appendChild(span);
+}
 
 const smoothScroll = function (target, duration) {
     var target = document.querySelector(target);

@@ -20,6 +20,24 @@ const slideNavigation = function () {
 
 };
 
+function typeWriter(text, id) {
+    var i = 0;
+    var speed = 95;
+    var helloText = document.querySelector(id);
+
+    function typing() {
+        if (i < text.length) {
+            helloText.innerHTML = helloText.innerHTML.slice(0, i) + text.charAt(i) + helloText.innerHTML.slice(i);
+            // helloText.textContent += text.charAt(i);
+            i++;
+            setTimeout(typing, speed);
+        }
+    }
+    typing();
+
+}
+typeWriter("Hello World! I'm Kevin Xu.", "#hello-text");
+
 const smoothScroll = function (target, duration) {
     var target = document.querySelector(target);
     var headerHeight = document.querySelector("header").offsetHeight - 2;
@@ -40,10 +58,10 @@ const smoothScroll = function (target, duration) {
         }
     };
     function ease(t, b, c, d) {
-        t /= d/2;
-        if (t < 1) return c/2*t*t*t + b;
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t * t + b;
         t -= 2;
-        return c/2*(t*t*t + 2) + b;
+        return c / 2 * (t * t * t + 2) + b;
     };
 
     requestAnimationFrame(animate);
@@ -58,16 +76,16 @@ function activites() {
     var projects = document.querySelector("#projects-link");
     var logo = document.querySelector("#logo");
     var duration = 1200;
-    aboutMe.addEventListener("click", function() {
+    aboutMe.addEventListener("click", function () {
         smoothScroll("#about-me", duration);
     });
-    resume.addEventListener("click", function() {
+    resume.addEventListener("click", function () {
         smoothScroll("#resume", duration);
     });
-    projects.addEventListener("click", function() {
+    projects.addEventListener("click", function () {
         smoothScroll("#projects", duration);
     });
-    logo.addEventListener("click", function() {
+    logo.addEventListener("click", function () {
         smoothScroll("#hello", duration);
     });
 }

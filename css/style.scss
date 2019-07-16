@@ -196,6 +196,15 @@ header {
   }
 }
 
+.toggle-cursor {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
 .container {
   display: grid;
 }

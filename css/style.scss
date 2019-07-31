@@ -102,6 +102,7 @@ header {
   a {
     color: $font-colour;
     text-decoration: none;
+    transition: all 0.15s ease;
   }
   a:hover {
     color: rgb(83, 83, 83);
@@ -185,7 +186,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   #hello-text {
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-family: "Oxygen Mono", monospace;
     width: 60vw;
     min-width: 340px;
@@ -341,7 +342,7 @@ header {
   margin-bottom: 3.5em;
 }
 
-//Projects
+// Projects
 #projects {
   // background-color: #E6BFFE;
   text-align: center;
@@ -369,6 +370,7 @@ header {
   }
 }
 
+// Footer
 footer {
   justify-content: space-evenly;
   align-items: center;
@@ -383,6 +385,7 @@ footer {
   a {
     color: rgb(110, 110, 110);
     text-decoration: none;
+    transition: all 0.15s ease;
   }
   a:hover {
     color: rgb(37, 37, 37);
@@ -451,6 +454,9 @@ footer {
 @media screen and (min-width: 1000px) {
   body {
     font-size: 20px;
+  }
+  .welcome #hello-text {
+    font-size: 2.6em;
   }
   .paper {
     font-size: 20px;

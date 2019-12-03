@@ -1,274 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ming Yang (Kevin) Xu Computer Science Student Profolio">
-    <meta name="keywords"
-        content="kevinmyxu, kevinmyxu.com, kevin xu, ming yang xu, kevin xu profolio, kevin xu computer science, profolio, computer science ">
-    <meta name="author" content="Ming Yang Xu">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ming Yang (Kevin) Xu Computer Science Student Profolio"
+    />
+    <meta
+      name="keywords"
+      content="kevinmyxu, kevinmyxu.com, kevin xu, ming yang xu, kevin xu profolio, kevin xu computer science, profolio, computer science "
+    />
+    <meta name="author" content="Ming Yang Xu" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Kevin Xu</title>
 
     <!-- Links -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Oxygen+Mono|Raleway&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="shortcut icon" href="resources/images/mylogo.png">
-    <link rel="icon" href="resources/images/mylogo.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Oxygen+Mono|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="shortcut icon" href="resources/images/mylogo.png" />
+    <link rel="icon" href="resources/images/mylogo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- Scripts -->
-    <script
-        type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143814227-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-143814227-1');
+    <script type="text/javascript">
+      (function() {
+        var css = document.createElement("link");
+        css.href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      })();
     </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-143814227-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-</head>
+      gtag("config", "UA-143814227-1");
+    </script>
+  </head>
 
-<body>
+  <body>
     <div class="page-wrapper">
-        <!-- Header -->
-        <header class="flex width">
-            <div class="name">
-                <h3>Kevin Xu</h3>
+      <!-- Header -->
+      <header class="flex width">
+        <div class="name">
+          <h3>Kevin Xu</h3>
+        </div>
+        <div class="logo">
+          <a href="#hello" id="logo">
+            <img src="resources/images/mylogo.png" alt="KX" />
+          </a>
+        </div>
+        <div class="empty"></div>
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul class="nav-links links width flex">
+            <li><a href="#about-me" id="about-me-link">About Me</a></li>
+            <li><a href="#resume" id="resume-link">Resume</a></li>
+            <li><a href="#projects" id="projects-link">Projects</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hello Image -->
+      <section id="hello" class="width" data-colour="#c8f2ff">
+        <img
+          src="resources/images/mountains.png"
+          alt="mountains"
+          id="mountains"
+          class="animated slideInLeft"
+        />
+        <img
+          src="resources/images/sun.png"
+          alt="sun"
+          id="sun"
+          class="animated slideInRight fadeIn"
+        />
+        <div class="welcome flex">
+          <h1 id="hello-text" data-content="Hello World! I'm Kevin Xu."></h1>
+          <a
+            href="https://github.com/karkevin"
+            target="_blank"
+            class="fab fa-github fa-2x icons animated fadeInUp"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mingyang-xu/"
+            target="_blank"
+            class="fab fa-linkedin-in fa-2x icons animated fadeInUp"
+          ></a>
+          <a
+            href="mailto:karkevin14@gmail.com"
+            target="_blank"
+            class="far fa-envelope fa-2x icons animated fadeInUp"
+          ></a>
+        </div>
+      </section>
+
+      <!-- About Me  -->
+      <section id="about-me" class="flex" data-colour="#9db3ff">
+        <div class="about-head section-title">
+          <p>Programmer.</p>
+          <p>Student.</p>
+          <p>Designer.</p>
+          <p>Entrepreneur.</p>
+        </div>
+        <div class="container" id="complete">
+          <div class="container blurb" id="about">
+            <div class="top about-top">
+              <p>About Me</p>
             </div>
-            <div class="logo">
-                <a href="#hello" id="logo">
-                    <img src="resources/images/mylogo.png" alt="KX">
-                </a>
+            <p class="content">
+              Hello! My name is Kevin Xu and I am a student at the University of
+              Toronto. Having a passion for development and design, I am always
+              expanding my knowledge in the field through school and side
+              projects. I love trying new things and meeting people, so feel
+              free to contact me using the links above!
+            </p>
+          </div>
+          <div class="container blurb box" id="key-points">
+            <div class="top about-top">
+              <i class="far fa-paper-plane fa-2x"></i>
+              <p>Key Points</p>
             </div>
-            <div class="empty"></div>
-            <!-- Navigation -->
-            <nav class="nav">
-                <ul class="nav-links links width flex">
-                    <li><a href="#about-me" id="about-me-link">About Me</a></li>
-                    <li><a href="#resume" id="resume-link">Resume</a></li>
-                    <li><a href="#projects" id="projects-link">Projects</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        </header>
-
-        <!-- Hello Image -->
-        <section id="hello" class="width" data-colour="#c8f2ff">
-            <img src="resources/images/mountains.png" alt="mountains" id="mountains" class="animated slideInLeft">
-            <img src="resources/images/sun.png" alt="sun" id="sun" class="animated slideInRight fadeIn">
-            <div class="welcome flex">
-                <h1 id="hello-text" data-content="Hello World! I'm Kevin Xu."></h1>
-                <a href="https://github.com/karkevin" target="_blank"
-                    class="fab fa-github fa-2x icons animated fadeInUp"></a>
-                <a href="https://www.linkedin.com/in/mingyang-xu/" target="_blank"
-                    class="fab fa-linkedin-in fa-2x icons animated fadeInUp"></a>
-                <a href="mailto:karkevin14@gmail.com" target="_blank"
-                    class="far fa-envelope fa-2x icons animated fadeInUp"></a>
+            <div class="questions content">
+              <p>Full Name</p>
+              <p>Location</p>
+              <p>Grad</p>
+              <p>Résumé</p>
+              <p>Email</p>
             </div>
-        </section>
-
-        <!-- About Me  -->
-        <section id="about-me" class="flex" data-colour="#9db3ff">
-            <div class="about-head section-title">
-                <p>Programmer.</p>
-                <p>Student.</p>
-                <p>Designer.</p>
-                <p>Entrepreneur.</p>
+            <div class="answers content">
+              <p>Ming Yang (Kevin) Xu</p>
+              <p>Toronto, ON</p>
+              <p>April 2022</p>
+              <a href="resources/kevinXu.pdf" target="_blank">
+                <p>kevinXu.pdf</p>
+              </a>
+              <a href="mailto:karkevin14@gmail.com" target="_blank">
+                <p>karkevin14@gmail .com</p>
+              </a>
             </div>
-            <div class="container" id="complete">
-                <div class="container blurb" id="about">
-                    <div class="top about-top">
-                        <p>About Me</p>
-                    </div>
-                    <p class="content">Hello! My name is Kevin Xu and I am a student at the University of Toronto.
-                        Having a passion for development and design, I am always expanding my knowledge in the field
-                        through school and side projects. I love trying new things and meeting people, so feel free to
-                        contact me using the links above! </p>
-                </div>
-                <div class="container blurb box" id="key-points">
-                    <div class="top about-top">
-                        <i class="far fa-paper-plane fa-2x"></i>
-                        <p>Key Points</p>
-                    </div>
-                    <div class="questions content">
-                        <p>Full Name</p>
-                        <p>Location</p>
-                        <p>Grad</p>
-                        <p>Résumé</p>
-                        <p>Email</p>
-                    </div>
-                    <div class="answers content">
-                        <p>Ming Yang (Kevin) Xu</p>
-                        <p>Toronto, ON</p>
-                        <p>April 2022</p>
-                        <a href="resources/kevinXu.pdf" target="_blank">
-                            <p>kevinXu.pdf</p>
-                        </a>
-                        <a href="mailto:karkevin14@gmail.com" target="_blank">
-                            <p>karkevin14@gmail .com</p>
-                        </a>
-                    </div>
-
-
-                </div>
-                <div class="container blurb box" id="skills">
-                    <div class="top about-top"><i class="fas fa-code fa-2x"></i>
-                        <p>Skills</p>
-                    </div>
-                    <div class="technical content">
-                        <p>Python</p>
-                        <p>Java</p>
-                        <p>C</p>
-                        <p>SQL</p>
-                        <p>R</p>
-                    </div>
-                    <div class="design content">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                        <p>Photoshop</p>
-                        <p>Git</p>
-                    </div>
-                </div>
-
-                <div class="container blurb box" id="interests">
-                    <div class="top about-top"><i class="fab fa-dribbble fa-2x"></i>
-                        <p>Interests</p>
-                    </div>
-                    <div class="interest-one content">
-                        <p>Design</p>
-                        <p>Code</p>
-                        <!-- <p>Enactus</p> -->
-                        <p>Ping Pong</p>
-                    </div>
-                    <div class="interest-two content">
-                        <p>Guitar</p>
-                        <p>Basketball</p>
-                        <p>Badminton</p>
-                        <p>Photography</p>
-                    </div>
-
-                </div>
+          </div>
+          <div class="container blurb box" id="skills">
+            <div class="top about-top">
+              <i class="fas fa-code fa-2x"></i>
+              <p>Skills</p>
             </div>
-        </section>
+            <div class="technical content">
+              <p>Python</p>
+              <p>Java</p>
+              <p>C</p>
+              <p>SQL</p>
+              <p>R</p>
+            </div>
+            <div class="design content">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>Photoshop</p>
+              <p>Git</p>
+            </div>
+          </div>
 
-        <!-- Resume -->
-        <section id="resume" class="flex" data-colour="#B2A5FF">
-            <div class="paper">
-                <p class="resume-top section-title">résumé</p>
-                <div class="subject">
-                    <p class="topic">EDUCATION</p>
-                    <p class="title">University of Toronto - Honours BS Computer Science and Economics</p>
-                    <p class="time-frame">SEPT 2018 - APRIL 2022</p>
-                    <p class="gpa">Cumulative GPA: 4.00/4.00
-                    </p>
-                    <div class="content">
-                        <p class="courses">Relevant Courses:</p>
-                        <ul>
-                            <li>Introduction to Computer Science (Python)</li>
-                            <li>Mathematical Expression and Reasoning for CS</li>
-                            <li>Software Design (Java)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="subject">
-                    <p class="topic">EXPERIENCE</p>
-                    <p class="title">Networks Lab Assistant - University of Alberta</p>
-                    <p class="time-frame">MAY 2019 - AUGUST 2019</p>
-                    <p class="content">Developed a program to create JSON graphs from the localization of Bluetooth LE
-                        beacons. Worked
-                        with the Ubertooth library in C, socket programming using ZeroMQ, and the StreamGraph library in
-                        Java to accomplish this task.</p>
-                </div>
-                <div class="subject">
-                    <p class="topic">ACTIVITES</p>
+          <div class="container blurb box" id="interests">
+            <div class="top about-top">
+              <i class="fab fa-dribbble fa-2x"></i>
+              <p>Interests</p>
+            </div>
+            <div class="interest-one content">
+              <p>Design</p>
+              <p>Code</p>
+              <!-- <p>Enactus</p> -->
+              <p>Ping Pong</p>
+            </div>
+            <div class="interest-two content">
+              <p>Guitar</p>
+              <p>Basketball</p>
+              <p>Badminton</p>
+              <p>Photography</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <p class="title">Coding Commitee Member - UofT CS Community</p>
-                    <p class="time-frame">JANUARY 2019 - PRESENT</p>
-                    <ul class="content">
-                        <li>Organized monthly HackNights for CS students at UofT.</li>
-                        <li>Planned and advertised these events for students to learn and improve programming skills.
-                        </li>
-                    </ul>
-                    <p class="title">Cashier and Chef - Tokyo Express</p>
-                    <p class="time-frame">AUGUST 2015 - AUGUST 2019</p>
-                    <ul class="content">
-                        <li>Continuously greeted and took orders in a fast-paced environment.</li>
-                        <li>Able to handle multiple tasks and fulfill orders in a prompt manner.</li>
-                    </ul>
-                    <!-- <p class="title">Endearing Panda - Shopify Ecommerce Store</p>
+      <!-- Resume -->
+      <section id="resume" class="flex" data-colour="#B2A5FF">
+        <div class="paper">
+          <p class="resume-top section-title">résumé</p>
+          <div class="subject">
+            <p class="topic">EDUCATION</p>
+            <p class="title">
+              University of Toronto - Honours BS Computer Science and Economics
+            </p>
+            <p class="time-frame">SEPT 2018 - APRIL 2022</p>
+            <p class="gpa">Cumulative GPA: 4.00/4.00</p>
+            <div class="content">
+              <p class="courses">Relevant Courses:</p>
+              <ul>
+                <li>Introduction to Computer Science (Python)</li>
+                <li>Software Design (Java)</li>
+                <li>Software Tools and Systems Programming (C)</li>
+                <li>Introduction to the Theory of Computation</li>
+                <li>Data Structures and Analysis</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subject">
+            <p class="topic">EXPERIENCE</p>
+            <p class="title">Networks Lab Intern - University of Alberta</p>
+            <p class="time-frame">MAY 2019 - AUGUST 2019</p>
+            <p class="content">
+              Worked in a team to develop a localization system for BLE devices
+              using multithreading in C, analyzing over 500 data points in
+              real-time. Solved the problem of packet noise using an
+              n-trilateration algorithm to improve the visualization of nodes.
+            </p>
+            <p class="title">Programming Assistant - Duncan Memory Lab</p>
+            <p class="time-frame">SEPTEMBER 2019 - PRESENT</p>
+            <p class="content">
+              Designed and built a React-based web application for the final
+              deployment of an open-source psychology project using NextJS and
+              tailwind CSS. Additionally, constructed data pipelines in Python
+              to organize participant data in lab studies.
+            </p>
+          </div>
+          <div class="subject">
+            <p class="topic">ACTIVITES</p>
+
+            <p class="title">Coding Commitee Member - UofT CS Community</p>
+            <p class="time-frame">JANUARY 2019 - PRESENT</p>
+            <ul class="content">
+              <li>Organized monthly HackNights for CS students at UofT.</li>
+              <li>
+                Planned and advertised these events for students to learn and
+                improve programming skills.
+              </li>
+            </ul>
+            <p class="title">Cashier and Chef - Tokyo Express</p>
+            <p class="time-frame">AUGUST 2015 - AUGUST 2019</p>
+            <ul class="content">
+              <li>
+                Continuously greeted and took orders in a fast-paced
+                environment.
+              </li>
+              <li>
+                Able to handle multiple tasks and fulfill orders in a prompt
+                manner.
+              </li>
+            </ul>
+            <!-- <p class="title">Endearing Panda - Shopify Ecommerce Store</p>
                     <p class="time-frame">JULY 2018 - AUGUST 2018</p>
                     <ul class="content">
                         <li>Continuously greeted and took orders in a fast-paced environment.</li>
                         <li>Able to handle multiple tasks and fulfill orders in a prompt manner.</li>
                     </ul> -->
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Projects -->
-        <section id="projects" class="flex" data-colour="#E6BFFE">
-            <p class="project-top section-title width">PROJECTS</p>
-            <div class="container">
-                <div class="project">
-                    <p class="title top">MyGlowUp</p>
-                    <p class="content">Developed the front-end for a web app that received the Top 10 prize out of 102
-                        projects at UofT Hacks VI.</p>
-                </div>
-                <div class="project">
-                    <p class="title top">Automation Kumon</p>
-                    <p class="content">Used Electron to develop the front-end for a desktop app. Linked this interface
-                        to a Python
-                        back-end using ZeroMQ sockets.</p>
-                </div>
-                <!-- <div class="project">
-                    <p class="title top">Annoying Alarm</p>
-                    <p class="content">Worked with Android Studio to build an alarm app. Experimented using the OpenCV
-                        library for image processing.</p>
-                </div> -->
-                <div class="project">
-                    <p class="title top">Autocomplete Engine</p>
-                    <p class="content">Programmed a search engine in Python that has autocomplete features using binary
-                        search trees and recursion.</p>
-                </div>
-                <div class="project">
-                    <p class="title top">ATM Machine</p>
-                    <p class="content">Built a custon ATM in Java with a focus on software design and principles. Used
-                        Java
-                        libraries to implement an interactive UI.</p>
-                </div>
-                <div class="project">
-                    <p class="title top">Elevator Simulator</p>
-                    <p class="content">Applied OOP principles to a Python simulation. Devised several algorithms for
-                        optimization.</p>
-                </div>
-            </div>
-        </section>
+      <!-- Projects -->
+      <section id="projects" class="flex" data-colour="#E6BFFE">
+        <p class="project-top section-title width">PROJECTS</p>
+        <div class="container">
+          <div class="project">
+            <a href="https://buddiget.herokuapp.com" target="_blank">
+              <p class="title top">Bud(dy)get</p>
+              <p class="content">
+                A MERN stack app that solves the problem of roommate budgetting,
+                using JWT for user authentication.
+              </p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/karkevin/skinprofile" target="_blank">
+              <p class="title top">MyGlowUp</p>
+              <p class="content">
+                Developed the front-end for a web app that received the Top 10
+                prize out of 102 projects at UofT Hacks VI.
+              </p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/karkevin/Study-Buddies" target="_blank">
+              <p class="title top">Study With Me</p>
+              <p class="content">
+                App developed at Hack the North that connects students. Used
+                Azure Text API to match users based on sentiment and keywords.
+              </p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/karkevin/kumon-app" target="_blank">
+              <p class="title top">Automation Kumon</p>
+              <p class="content">
+                Used Electron to develop the front-end for a desktop app. Linked
+                this interface to a Python back-end using ZeroMQ sockets.
+              </p>
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="https://github.com/karkevin/autocomplete-engine-using-prefix-trees"
+              target="_blank"
+            >
+              <p class="title top">Autocomplete Engine</p>
+              <p class="content">
+                Programmed a search engine in Python that has autocomplete
+                features using binary search trees and recursion.
+              </p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/karkevin/ATM-Machine" target="_blank">
+              <p class="title top">ATM Machine</p>
+              <p class="content">
+                Built a custon ATM in Java with a focus on software design and
+                principles. Used Java libraries to implement an interactive UI.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Footer -->
-        <footer id="footer" class="width flex">
-            <p class="copy">Ming Yang Xu 2019</p>
-            <div class="links flex">
-                <a href="https://github.com/karkevin" target="_blank">github</a>
-                <a href="https://www.linkedin.com/in/mingyang-xu/" target="_blank">linkedin</a>
-                <a href="mailto:karkevin14@gmail.com" target="_blank">email</a>
-            </div>
-
-        </footer>
+      <!-- Footer -->
+      <footer id="footer" class="width flex">
+        <p class="copy">Ming Yang Xu 2019</p>
+        <div class="links flex">
+          <a href="https://github.com/karkevin" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/mingyang-xu/" target="_blank"
+            >linkedin</a
+          >
+          <a href="mailto:karkevin14@gmail.com" target="_blank">email</a>
+        </div>
+      </footer>
     </div>
 
     <!-- Javascript file -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

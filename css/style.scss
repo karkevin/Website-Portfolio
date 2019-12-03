@@ -20,7 +20,6 @@ $header-colour: rgb(243, 243, 243);
   padding: 0%;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -203,7 +202,8 @@ header {
   animation: blink 1s infinite ease;
 }
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -367,6 +367,11 @@ header {
     margin: 1.5em 0;
     font-size: 1.3em;
     text-transform: initial;
+  }
+  a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
   }
 }
 

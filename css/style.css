@@ -247,7 +247,8 @@ header .empty {
 }
 
 @-webkit-keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -256,7 +257,8 @@ header .empty {
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -455,6 +457,13 @@ header .empty {
   margin: 1.5em 0;
   font-size: 1.3em;
   text-transform: initial;
+}
+
+.project a {
+  text-decoration: none;
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+  color: black;
 }
 
 footer {
